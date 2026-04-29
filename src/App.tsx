@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Competition from "./pages/Competition";
 import Homepage from "./pages/Homepage";
-import Login from "./pages/Login";
+//import Login from "./pages/Login";
 import LoginForm from "./pages/LoginForm";
 import RegisterForm from "./pages/RegisterForm";
 import Seminar from "./pages/Seminar";
