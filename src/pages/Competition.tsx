@@ -11,26 +11,39 @@ export default function Competition() {
     >
       {/*1*/}
 <div className="w-full flex flex-col gap-6">
-      <section
-      id="comp"
-      className="py-10 flex gap-10 justify-between items-center p-5">
-        {/*kiri*/}
-        <div >
-          <p className="text-5xl text-red-900 font-serif font-bold">IT COMPETITION</p>
-          <p className="text-red-900 font-sans text-3xl">"From Creation To Innovation"</p> <br />
-          <p className="text-1xl font-sans">Kompetisi dalam INVOFEST ini mengusung tema “From Creation to Innovation”, 
-            Tema ini bertujuan mengajak generasi muda untuk mengembangkan inovasi dan kreativitas guna membentuk kelompok yang memiliki potensi luar biasa, yang mampu mewujudkan masa depan yang berkelanjutan.</p> <br />
-          <div className="flex gap-3">
-            <Button label="info selengkapnya" variant="primary"></Button>
-            <Button label="hubungi panitia" variant="outline"></Button>
-          </div>
-        </div>
+  <section
+    id="comp"
+    className="pt-15 py-10 flex gap-10 justify-between items-center p-5"
+  >
+    {/* Kiri */}
+    <div className="w-2/3 flex flex-col gap-6">
+      <h1 className="text-5xl text-red-900 font-serif font-bold uppercase">
+        IT COMPETITION
+      </h1>
+      <p className="text-red-900 font-sans text-3xl">
+        "From Creation To Innovation"
+      </p>
+      <p className="text-1xl font-sans leading-relaxed">
+        Kompetisi dalam INVOFEST ini mengusung tema “From Creation to Innovation”, 
+        Tema ini bertujuan mengajak generasi muda untuk mengembangkan inovasi dan kreativitas 
+        guna membentuk kelompok yang memiliki potensi luar biasa, yang mampu mewujudkan 
+        masa depan yang berkelanjutan.
+      </p>
+      <div className="flex gap-3">
+        <Button label="info selengkapnya" variant="primary"></Button>
+        <Button label="hubungi panitia" variant="outline"></Button>
+      </div>
+    </div>
 
-      {/*kanan*/}
-        <div>
-          <img src="https://www.invofest-harkatnegeri.com/assets/Maskot-Lomba.png" alt="maskot" />
-        </div>
-      </section>
+    {/* Kanan */}
+    <div className="w-1/3">
+      <img 
+        src="https://www.invofest-harkatnegeri.com/assets/Maskot-Lomba.png" 
+        alt="maskot" 
+        className="w-full h-auto object-contain" 
+      />
+    </div>
+  </section>
 </div>
     {/*2*/}
     <div>

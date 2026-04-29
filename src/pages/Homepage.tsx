@@ -5,7 +5,7 @@ export default function Homepage() {
     <div>
       <section
         id="hero"
-        className="py-10 flex gap-10 justify-between items-center p-5"
+        className="pt-1 py-10 flex gap-10 justify-between items-center p-5"
       >
         <div className="w-2/3 flex flex-col gap-6">
           <img
