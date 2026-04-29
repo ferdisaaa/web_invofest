@@ -1,8 +1,7 @@
-import { Home, Trophy, Clipboard, Laptop, Mic, UserCircle } from "lucide-react";
+import { Home, Trophy, Clipboard, Laptop, Mic, UserCircle, } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 export const Header: React.FC = () => {
-  const currentPath = "#";
 
   const menuItems = [
     { label: "Beranda", href: "/", icon: <Home size={18} /> },
