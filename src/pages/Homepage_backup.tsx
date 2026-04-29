@@ -1,8 +1,8 @@
-import Header from "./components/Header";
-import Button from "./components/ui/Button";
-import { Collapse } from "./components/ui/Collapse";
-import SpeakerCard from "./components/ui/SpeakerCard";
-import { Card } from "./components/ui/Card";
+import Header from "../components/Header";
+import Button from "../components/ui/Button";
+import { Collapse } from "../components/ui/Collapse";
+import SpeakerCard from "../components/ui/SpeakerCard";
+import { Card } from "../components/ui/Card";
 
 function App() {
   const speakers = [
