@@ -8,6 +8,13 @@ import Talkshow from "./pages/Talkshow";
 import Workshop from "./pages/Workshop";
 import MainLayout from "./layouts/MainLayout";
 import AuthLayout from "./layouts/AuthLayout";
+import DashboardIndex from "./pages/dashboard/DashboardIndex";
+import ProtectedRoute from "./routes/protectedRouted";
+import DashboardLayout from "./layouts/DashboardLayout";
+import CategoryIndex from "./pages/dashboard/Category/categoryIndex";
+import PembicaraIndex from "./pages/dashboard/pembicara/pembicaraIndex";
+import { CategoryCreate } from "./pages/dashboard/Category/CategoryCreate";
+
 
 function App() {
   return (
@@ -26,6 +33,18 @@ function App() {
         <Route element={<AuthLayout />}>
           <Route path="/login" element={<LoginForm />} />
           <Route path="/register" element={<RegisterForm />} />
+        </Route>
+
+        //halaman dashboard, hanya bisa diakses jika sudah login
+        <Route element={<ProtectedRoute />}>
+          <Route element={<DashboardLayout />}>
+            <Route path="/dashboard" element={<DashboardIndex />} />
+
+            <Route path="/dashboard/category" element={<CategoryIndex/>} />
+            <Route path="/dashboard/category/create" element={<CategoryCreate/>} />
+
+            <Route path="/dashboard/pembicara" element={<PembicaraIndex/>} />
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>
