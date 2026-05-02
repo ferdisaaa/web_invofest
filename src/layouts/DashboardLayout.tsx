@@ -30,22 +30,22 @@ export default function DashboardLayout() {
             <div className="flex flex-col gap-6 w-full">
                 <ul>
                     <li>
-                        <Link to="/dashboard">Dashboard</Link>
+                        <Link to="/dashboard" className="font-bold">Dashboard</Link>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <Link to="/dashboard/category">Category</Link>
+                        <Link to="/dashboard/category" className="font-bold">Category</Link>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <Link to="/dashboard/pembicara">Pembicara</Link>
+                        <Link to="/dashboard/pembicara" className="font-bold">Pembicara</Link>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <Link to="/dashboard">Event</Link>
+                        <Link to="/dashboard/event"className="font-bold">Event</Link>
                     </li>
                 </ul>
             </div>
