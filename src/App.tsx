@@ -14,7 +14,7 @@ import DashboardLayout from "./layouts/DashboardLayout";
 import CategoryIndex from "./pages/dashboard/Category/categoryIndex";
 import PembicaraIndex from "./pages/dashboard/pembicara/pembicaraIndex";
 import { CategoryCreate } from "./pages/dashboard/Category/CategoryCreate";
-import EventCreate from "./pages/dashboard/event/EventCreate";
+import EventCreate from "./pages/dashboard/event/eventCreate";
 import EventIndex from "./pages/dashboard/event/eventIndex";
 
 
