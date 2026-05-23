@@ -14,55 +14,62 @@ export default function DashboardLayout() {
 
 
     return (
-    <div className="flex w-full min-h-screen">
+        <div className="flex w-full min-h-screen">
 
-        {/*kiri*/}
-        <div className="bg-pink-400 w-64 flex flex-col justify-between p-4">
-            {/*atas*/}
+            {/*kiri*/}
+            <div className="bg-gray-500 w-64 flex flex-col justify-between p-4">
+                {/*atas*/}
 
 
-            <div>
-                <h1 className="text-2xl font-bold text-center text-white">Invofest</h1>
+                <div>
+                    <h1 className="text-2xl font-bold text-center text-white">Invofest</h1>
+                </div>
+
+
+                {/*tengah*/}
+                <div className="flex flex-col gap-6 w-full">
+                    <ul>
+                        <li>
+                            <Link to="/dashboard" className="font-bold text-white">Dashboard</Link>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <Link to="/dashboard/category" className="font-bold text-white">Category</Link>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <Link to="/dashboard/pembicara" className="font-bold text-white">Pembicara</Link>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <Link to="/dashboard/event" className="font-bold text-white">Event</Link>
+                        </li>
+                    </ul>
+
+
+                    <ul>
+                        <li>
+                            <Link to="/dashboard/biodata" className="font-bold text-white">Biodata</Link>
+                        </li>
+                    </ul>
+                </div>
+
+
+                {/*bawah*/}
+                <div>
+                    <button type="button"
+                        onClick={handleLogout}
+                        className="w-full px-4 py-2 bg-green-700 text-white rounded-2xl cursor-pointer hover:bg-red-800">Logout</button>
+                </div>
             </div>
 
-            
-            {/*tengah*/}
-            <div className="flex flex-col gap-6 w-full">
-                <ul>
-                    <li>
-                        <Link to="/dashboard" className="font-bold">Dashboard</Link>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <Link to="/dashboard/category" className="font-bold">Category</Link>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <Link to="/dashboard/pembicara" className="font-bold">Pembicara</Link>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <Link to="/dashboard/event"className="font-bold">Event</Link>
-                    </li>
-                </ul>
-            </div>
-
-
-            {/*bawah*/}
-            <div>
-                <button type="button"
-                onClick={handleLogout}
-                className="w-full bg-blue-500 text-white rounded-2xl cursor-pointer hover:bg-red-800">Logout</button>
+            {/*kanan*/}
+            <div className="p-4">
+                <Outlet />
             </div>
         </div>
-
-        {/*kanan*/}
-        <div className="p-4">
-        <Outlet />
-        </div>
-    </div>
     );
-  }
+}

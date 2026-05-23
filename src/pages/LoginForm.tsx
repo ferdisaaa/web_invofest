@@ -33,11 +33,11 @@ export default function LoginForm() {
 
   const onSubmit = (data: FormData) => {
     console.log(data);
-    if (data.email === "ferdi@gmail.com" && data.password === "admin123") {
+    if (data.email === "24090075" && data.password === "ferdi123") {
       alert("Login berhasil!");
       login(data.email); // Simpan status login di Zustand
       //redirect ke dashboard
-    navigate("/dashboard");
+      navigate("/dashboard");
     } else {
       alert("Login gagal! Email atau password salah.");
     }
