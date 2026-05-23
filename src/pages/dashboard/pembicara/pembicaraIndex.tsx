@@ -78,7 +78,7 @@ export default function PembicaraIndex() {
   return (
     <div className="p-8 max-w-full mx-auto w-full">
       <div className="flex justify-between items-center mb-8">
-        <div>
+        <div className="p-5">
           <h1 className="text-3xl font-bold text-gray-900 font-serif">Pembicara Event</h1>
         </div>
         <Link to="/dashboard/pembicara/create" className="px-4 py-2 bg-green-700 text-white rounded-lg font-bold">+ Tambah Pembicara</Link>
